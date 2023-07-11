@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MuhammadWildan_Projek_Akhir_KBA"
         tools:targetApi="31">
         <activity
+            android:name=".List2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ItemListActivity2"
             android:exported="false" />
         <activity

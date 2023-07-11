@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".ItemListActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/abu">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="400dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/soto"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Soto Betawi"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tv_deskripsi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nama soto Betawi pertama kali digunakan oleh Lie Bowen Bo. Ia menjual soto Betawi di Prinsen Park (kini Taman Hiburan Rakyat Lokasari). Sejak itu, nama soto Betawi mulai populer dan digunakan secara luas oleh masyarakat. Salah satunya yang legendaris adalah Soto Betawi H. Ma'ruf yang berdiri sejak 1940-an."
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+    <TextView
+        android:id="@+id/tv_tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/poppins"
+        android:text="1940"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/tv_nama"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

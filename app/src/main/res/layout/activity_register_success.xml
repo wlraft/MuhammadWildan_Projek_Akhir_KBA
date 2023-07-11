@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterSuccessActivity">
+    tools:context=".RegisterSuccessActivity"
+    android:background="@color/abu">
 
     <Button
         android:id="@+id/btn_loginsuccess"
@@ -31,6 +32,7 @@
         android:layout_marginBottom="49dp"
         android:fontFamily="@font/poppins"
         android:text="Register Berhasil"
+        android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintBottom_toTopOf="@+id/btn_loginsuccess"
         app:layout_constraintEnd_toEndOf="parent"
